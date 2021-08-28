@@ -2,7 +2,7 @@
 Plugin for kawaii folds and conceals in latex.
 The plugin is a fork of several plugins and files united together and posihed a bit to create nice folds and conceal latex syntax.
 
-![screenshot](https://github.com/anufrievroman/vim-tex-kawaii/blob/master/static/screenshot.jpg)
+![screenshot](https://github.com/anufrievroman/vim-tex-kawaii/blob/master/screenshot.jpg)
 
 ## Original plugins: 
 
