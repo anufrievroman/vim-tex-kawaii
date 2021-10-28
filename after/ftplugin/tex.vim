@@ -109,7 +109,7 @@ function! TeXFoldText()
         let pattern = '\\*documentclass\*\={\([^}]*\)}'
         let repl = '' . g:tex_fold_sec_char . ' Header'
     elseif fold_line =~ '^\s*\\\(sub\)*documentclass\['
-        let pattern = '\\*documentclass\['
+        let pattern = '\\*documentclass\[[^}]*}'
         let repl = '' . g:tex_fold_sec_char . ' Header'
     elseif fold_line =~ '^[^%]*%[^{]*{{{'
         let pattern = '^[^{]*{' . '{{\([.]*\)'
@@ -219,6 +219,7 @@ if has('conceal')
   syn match texMathSymbol '_i' contained conceal cchar=ᵢ
   syn match texMathSymbol '^i' contained conceal cchar=ⁱ
   syn match texMathSymbol '_o' contained conceal cchar=ₒ
+  syn match texMathSymbol '*'  contained conceal cchar=·
 
 
   " logical symbols
