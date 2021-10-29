@@ -21,7 +21,7 @@ if !exists('g:tex_fold_sec_char')
 endif
 
 if !exists('g:tex_fold_env_char')
-    let g:tex_fold_env_char = ''
+    let g:tex_fold_env_char = '☘'
 endif
 
 if !exists('g:tex_fold_override_foldtext')
@@ -177,6 +177,7 @@ if has('conceal')
   syn match texMathSymbol '\\Delta\> ' contained conceal cchar=Δ
 
   " Use regular greek letters when subscript/superscript not available:
+  syn match texStatement '{\\textmu}'      contained conceal cchar=μ
   syn match texSubscripts '\\mu\>'         contained conceal cchar=μ
   syn match texSuperscripts '\\mu\>'       contained conceal cchar=μ
   syn match texSuperscripts '\\rho\>'      contained conceal cchar=ᵖ
