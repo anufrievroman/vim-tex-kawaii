@@ -155,6 +155,9 @@ set conceallevel=2
 " Additional conceal replacements
 " Original file is https://github.com/wjakob/wjakob.vim/blob/master/after/syntax/tex.vim
 
+syn region texStatement start='\\bibliography{' end='}' contained conceal cchar=📚
+syn region texStatement start='\\cite{' end='}' contained conceal cchar=※
+
 if has('conceal')
   " More paper specific (what to do with these??)
   syn match texStatement '\\%'          contained conceal cchar=%
