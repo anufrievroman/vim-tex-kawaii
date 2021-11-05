@@ -54,7 +54,7 @@ endif
 function! TeXFold(lnum)
     let line = getline(a:lnum)
     let default_envs = g:tex_fold_use_default_envs?
-        \['frame', 'table', 'figure', 'align', 'lstlisting', 'abstract']: []
+        \['frame', 'table', 'figure', 'equation', 'align', 'lstlisting', 'abstract']: []
     let envs = '\(' . join(default_envs + g:tex_fold_additional_envs, '\|') . '\)'
 
     if line =~ '^\s*\\section'
