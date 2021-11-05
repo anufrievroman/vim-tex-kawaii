@@ -163,8 +163,6 @@ if has('conceal')
   syn region texStatement start='\\ref{' end='}' contained conceal cchar=𝕏
 
   " Random replacements:
-  syn match texStatement '\\erfc'          contained conceal cchar=erfc
-  syn match texStatement '\\exp'          contained conceal cchar=exp
   syn match texStatement '\\%'          contained conceal cchar=%
   syn match texMathSymbol '\\pathspace' contained conceal cchar=Ω
   syn match texMathSymbol '\\surfaces'  contained conceal cchar=𝓜
